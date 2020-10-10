@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+    <style>
+    * {
+        margin: 5px;padding: 5px;font-size: 25px;
+    }
+    </style>
+</head>
+<body>
+    
+    <script>
+
+        // Topic 12 Arrays
+
+        var naam = ['Muhammad','Moavia','Khan'];
+        document.write(naam);
+        document.write("<br>");
+
+        var naam = new Array('Muhammad','Moavia','Khan');
+        document.write(naam);
+        document.write("<br>");
+
+        // Topic 13 Array Methods & Proporties
+
+        // proporty
+        var array = ['Muhammad','Moavia','Khan'];
+        document.write(array+"<br>");
+        var lenght = array.length;
+        document.write(lenght);
+
+        document.write("<br>")
+
+        // Mathod
+        var array = ['Muhammad','Shaheer','Khan'];
+        array.sort();
+        document.write(array);
+
+        document.write("<br>");
+
+        var array = ['Bye','Muhammad',' Shaheer',' Khan','Zai'];
+        array.pop(); // remove the last value 
+        array.shift(); // remove the first value
+        array.unshift('Hello') // add the value at the start
+        // array.reverse();
+        array.push(" Muhammad Moavia Khan"); // add a value in the last
+        document.write(array);
+
+        document.write("<br>");
+
+        var array = ['Bye','Muhammad',' Shaheer',' Khan','Zai'];
+        var check = Array.isArray(array)
+
+        document.write(check);
+
+        document.write("<br>");
+
+        var array = ['Muhammad',' Shaheer',' Khan'];
+        var check = ['Muhammad','Moavia','Khan']
+
+        document.write(array.concat(check));
+
+    </script>
+
+
+</body>
+</html>
